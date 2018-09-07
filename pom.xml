@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>Seele Tech</groupId>
+    <artifactId>Seele Tech</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--<设置项目的编码格式>-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server-standalone &ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>org.seleniumhq.selenium</groupId>-->
+        <!--<artifactId>selenium-server-standalone</artifactId>-->
+        <!--<version>2.53.0</version>-->
+        <!--</dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.sf.saxon/saxon -->
+        <dependency>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>saxon</artifactId>
+            <version>8.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.5</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>velocity</groupId>
+            <artifactId>velocity-dep</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.8</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+
+            <!--<plugin>-->
+                <!--&lt;!&ndash;定义可执行打包类型及主类  &ndash;&gt;-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-jar-plugin</artifactId>-->
+                <!--<version>2.4</version>-->
+                <!--<configuration>-->
+                    <!--<archive>-->
+                        <!--<manifest>-->
+                            <!--<addClasspath>true</addClasspath>-->
+                            <!--<classpathPrefix>lib/</classpathPrefix>-->
+                            <!--<mainClass></mainClass>-->
+                        <!--</manifest>-->
+                        <!--&lt;!&ndash; 用maven在MANIFEST.MF资料中的Class-Path中增加当前目录(.)  &ndash;&gt;-->
+                        <!--<manifestEntries>-->
+                            <!--<Class-Path>.</Class-Path>-->
+                        <!--</manifestEntries>-->
+                    <!--</archive>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
+        </plugins>
+
+
+    </build>
+
+</project>

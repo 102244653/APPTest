@@ -1,0 +1,51 @@
+ADB常用命令说明：
+
+1. aapt dump badging apk文件名  > path/1.txt
+获取到应用的包名与 Actiity，文件中找到 package: name 和 launchable-activity: name
+
+2. ps	不带参数列出所有的进程	ps -t  则会输出所有的线程/ps -8080
+
+3. printenv	显示环境变量	 printenv HOSTNAME
+
+4. setprop  	设置系统属性，和环境变量不是一个概念
+
+setprop ctl.stop zygote   停止zygote服务
+setprop ctl.start zygote   启动zygote服务
+setprop persist.sys.usb.config adb  开启adb调试"
+
+
+5. getprop  	获取系统属性，不带参数显示所有属性	getprop sys.usb.config
+
+6. kill  	杀死进程
+
+7. adb shell pm list packages	列出手机装的所有app的包名
+
+8. adb shell pm list packages -s	列出系统应用的所有包名
+
+9. adb shell pm list packages -3	列出除了系统应用的第三方应用包名
+
+10. adb shell pm clear <packagename>	清除应用数据与缓存
+
+11. adb shell am force-stop <packagename>	强制停止应用
+
+12. adb shell am start -n com.stormzhang.demo/.ui.SplashActivity	启动应用
+
+13. adb logcat	查看日志（Ctrl + c离开监控模式）
+
+14. adb reboot	重启
+
+15. adb get-serialno	获取序列号
+
+16. adb shell  cat /sys/class/net/wlan0/address	获取 MAC 地址
+
+17. adb shell getprop ro.product.model	查看设备型号
+
+18. adb shell getprop ro.build.version.release	查看 Android 系统版本
+
+19. db shell wm size	查看屏幕分辨率
+
+20. adb uninstall -k package	移除程序时，保留数据
+
+21. adb install -r filename.apk	保留已设定数据，重新安装filename.apk
+
+22. adb bugreport	产生adb出错报告

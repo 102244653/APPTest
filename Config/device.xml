@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device name="appiumstartlist">
+    <deviceId id="devices0">
+        <deviceName>127.0.0.1:62025</deviceName>
+        <appiumPort>3335</appiumPort>
+    </deviceId>
+    <deviceId id="devices1">
+        <deviceName>127.0.0.1:62001</deviceName>
+        <appiumPort>3336</appiumPort>
+    </deviceId>
+</Device>

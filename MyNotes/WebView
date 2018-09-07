@@ -1,0 +1,21 @@
+方法1：
+借助Appium 的AppiumBootstrap.jar工具
+执行以下命令后再Ctrl C终止：
+adb shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap  -e disableAndroidWatchers false
+注意：经测试用此方法只对当前页面有效
+
+方法2：
+借助Android系统自带的TalkeBack功能
+Android系统一般自带一个TalkeBack功能。但这里千万要注意：打开之后整个系统的操作都变得不同了！！滑动界面需要两个手指，单击变成双击。
+打开之后用UiAutomatorViewer获取webview界面的内容，你就会发现原来webview里面获取不到的ui元素，现在已经可以可以获取到了。即使现在你
+关掉TalkBack，也能获取到，除非重启手机才会回到不能获取的状态，所以开启后我们可以立即关闭，以方便操作。
+功能路径：
+原生系统：设置 – 辅助功能(Accessibility) – TalkBack
+华为EMUI系统：设置 – 高级设置 – 辅助功能 – TalkBack
+注意：
+有些手机的系统对TalkBack的名称和路径都定制过，根据实际情况查找
+
+方法3：
+使用Chrome自带的inspect工具查看（手机使用Chrome打开网页）
+用Chrome 浏览器访问网址 chrome://inspect/#devices
+点击 inspect

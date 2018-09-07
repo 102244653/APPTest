@@ -1,0 +1,1277 @@
+[35m[Appium][39m Welcome to Appium v1.8.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 3334
+[35m[Appium][39m   bootstrapPort: 4445
+[35m[Appium][39m   udid: 127.0.0.1:62025
+[35m[Appium][39m Deprecated server args:
+[35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"127.0.0.1:62025"}'
+[35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[35m[Appium][39m   udid: 127.0.0.1:62025
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:3334
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.seele.tigerwallet","appActivity":"com.seele.tigerwallet.ui.activtiy.WelcomeActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"platformVersion":"8.0.0","unicodeKeyboard":true,"sessionOverride":true,"udid":"127.0.0.1:62025","platformName":"Android","deviceName":"xiaomi","resetKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appPackage":"com.seele.tigerwallet","appActivity":"com.seele.tigerwallet.ui.activtiy.WelcomeActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"platformVersion":"8.0.0","unicodeKeyboard":true,"sessionOverride":true,"udid":"127.0.0.1:62025","platformName":"Android","deviceName":"xiaomi","resetKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1534487386694 (14:29:46 GMT+0800 (中国标准时间))
+[35m[Appium][39m Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[35m[Appium][39m Creating new AndroidDriver (v2.7.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   udid: 127.0.0.1:62025
+[35m[Appium][39m   appPackage: com.seele.tigerwallet
+[35m[Appium][39m   appActivity: com.seele.tigerwallet.ui.activtiy.WelcomeActivity
+[35m[Appium][39m   noReset: true
+[35m[Appium][39m   noSign: true
+[35m[Appium][39m   newCommandTimeout: 600
+[35m[Appium][39m   platformVersion: 8.0.0
+[35m[Appium][39m   unicodeKeyboard: true
+[35m[Appium][39m   sessionOverride: true
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   deviceName: xiaomi
+[35m[Appium][39m   resetKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"udid":"127.0.0.1:62025","...
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: sessionOverride.
+[35m[BaseDriver][39m Session created with session id: 5122e912-e8d5-4c6f-9720-7acb272c21b4
+[debug] [35m[AndroidDriver][39m Getting Java version
+[35m[AndroidDriver][39m Java version is: 1.8.0_131
+[35m[ADB][39m Checking whether adb is present
+[35m[ADB][39m Found 1 'build-tools' folders under 'D:\sdk' (newest first):
+[35m[ADB][39m     D:/sdk/build-tools/25.0.2
+[35m[ADB][39m Using adb.exe from D:\sdk\platform-tools\adb.exe
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 2 device(s) connected
+[35m[AndroidDriver][39m Using device: 127.0.0.1:62025
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:62025
+[35m[AndroidDriver][39m App file was not listed, instead we're going to run com.seele.tigerwallet directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell pm list packages com.seele.tigerwallet'
+[35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 wait-for-device'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell pm list packages io.appium.settings'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell dumpsys package io.appium.settings'
+[35m[ADB][39m Checking whether aapt is present
+[35m[ADB][39m Using aapt.exe from D:\sdk\build-tools\25.0.2\aapt.exe
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell ps'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22
+[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell settings put secure mock_location 1'
+[35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.
+[35m[AndroidDriver][39m Got language: 'null' and country: 'null'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support
+[debug] [35m[AndroidDriver][39m Pushing unicode ime to device...
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 install C\:\\Users\\admin\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\_appium-android-ime\@2.0.0\@appium-android-ime\\bin\\UnicodeIME-debug.apk'
+[debug] [35m[ADB][39m Install command stdout: [100%] /data/local/tmp/UnicodeIME-debug.apk
+[debug] [35m[ADB][39m C:\Users\admin\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-ime@2.0.0@appium-andr...deIME-debug.apk: 1 file pushed. 2.8 MB/s (36795 bytes in 0.013s)
+[debug] [35m[ADB][39m 	pkg: /data/local/tmp/UnicodeIME-debug.apk
+[debug] [35m[ADB][39m Failure [INSTALL_FAILED_ALREADY_EXISTS]
+[debug] [35m[ADB][39m Application 'C:\Users\admin\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-ime@2.0.0@appium-android-ime\bin\UnicodeIME-debug.apk' already installed. Continuing.
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell settings get secure default_input_method'
+[debug] [35m[AndroidDriver][39m Unsetting previous IME io.appium.android.ime/.UnicodeIME
+[debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.android.ime/.UnicodeIME'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell ime enable io.appium.android.ime/.UnicodeIME'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell ime set io.appium.android.ime/.UnicodeIME'
+[debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.unlock
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell pm list packages io.appium.unlock'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.unlock'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell dumpsys package io.appium.unlock'
+[debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 5.1.1
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell wm size'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': SM-G955F
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': samsung
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4445 to device: 4724
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 forward tcp\:4445 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 push C\:\\Users\\admin\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\_appium-android-bootstrap\@2.13.0\@appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar /data/local/tmp/'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell ps'
+[35m[ADB][39m No uiautomator process found to kill, continuing...
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:62025","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.seele.tigerwallet","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [35m[UiAutomator][39m Moving to state 'online'
+[35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell am start -W -n com.seele.tigerwallet/com.seele.tigerwallet.ui.activtiy.WelcomeActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[35m[Appium][39m New AndroidDriver session created successfully, session 5122e912-e8d5-4c6f-9720-7acb272c21b4 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1534487394573 (14:29:54 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"127.0.0.1:62025","appPackage":"com.seele.tigerwallet","appActivity":"com.seele.tigerwallet.ui.activtiy.WelcomeActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"platformVersion":"8.0.0","unicodeKeyboard":true,"sessionOverride":true,"platformName":"Android","deviceName":"xiaomi","resetKeyboard":true},"udid":"127.0.0.1:62025","appPackage":"com.seele.tigerwallet","appActivity":"com.seele.tigerwallet.ui.activtiy.WelcomeActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"platformVersion":"5.1.1","unicodeKeyboard":true,"sessionOverride":true,"platformName":"Android","deviceName":"127.0.0.1:62025","resetKeyboard":true,"deviceUDID":"127.0.0.1:62025","deviceScreenSize":"720x1280","deviceModel":"SM-G955F","deviceManufacturer":"samsung"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m7883 ms - 1047[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":10000}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.timeouts() with args: [{"protocol":"MJSONWP","type":"implicit","ms":10000},"5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m type: implicit, ms: 10000
+[debug] [35m[BaseDriver][39m Set implicit wait to 10000ms
+[debug] [35m[MJSONWP][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/timeouts [39m[32m200[39m [90m6 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.seele.tigerwallet:id/btn_ok"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["id","com.seele.tigerwallet:id/btn_ok","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m44 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/1/click[39m
+[35m[HTTP][39m [90m{"id":"1"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.click() with args: ["1","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/1/click [39m[32m200[39m [90m368 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.seele.tigerwallet:id/btn_create_wallet"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["id","com.seele.tigerwallet:id/btn_create_wallet","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_create_wallet","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_create_wallet","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_create_wallet' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_create_wallet]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m87 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/2/click[39m
+[35m[HTTP][39m [90m{"id":"2"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.click() with args: ["2","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/2/click [39m[32m200[39m [90m299 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[1]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[1]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[1]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[1]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[1]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=4]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m591 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/3/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["3","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"3"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"3"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"figure"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "figure"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/3/text [39m[32m200[39m [90m7 ms - 80[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[2]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[2]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[2]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[2]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[2]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=5]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"4"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m52 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/4/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["4","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"4"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"4"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"exit"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "exit"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/4/text [39m[32m200[39m [90m76 ms - 78[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[3]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[3]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[3]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[3]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[3]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=6]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"5"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"5"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m88 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/5/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["5","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"5"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"5"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "example"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/5/text [39m[32m200[39m [90m5 ms - 81[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"example"}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[4]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[4]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[4]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[4]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[4]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=7]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"6"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"6"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m33 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/6/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["6","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"6"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"6"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"festival"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "festival"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/6/text [39m[32m200[39m [90m5 ms - 82[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[5]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[5]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[5]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[5]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[5]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=8]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"7"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"7"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m20 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/7/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["7","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"7"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"7"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"merge"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "merge"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/7/text [39m[32m200[39m [90m8 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[6]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[6]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[6]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[6]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[6]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=9]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"8"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"8"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m48 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/8/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["8","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"8"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"8"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "object"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/8/text [39m[32m200[39m [90m5 ms - 80[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"object"}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[7]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[7]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[7]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[7]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[7]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=10]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"9"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"9"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m20 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/9/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["9","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"9"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"9"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "cradle"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/9/text [39m[32m200[39m [90m6 ms - 80[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"cradle"}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[8]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[8]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[8]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[8]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[8]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=11]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"10"}}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"10"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m25 ms - 88[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/10/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["10","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"10"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"10"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "aware"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/10/text [39m[32m200[39m [90m6 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"aware"}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[9]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[9]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[9]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[9]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[9]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=12]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"11"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m23 ms - 88[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"11"}}
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/11/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["11","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"11"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"11"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "recall"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/11/text [39m[32m200[39m [90m5 ms - 80[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"recall"}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[10]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[10]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[10]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[10]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[10]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=13]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"12"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m19 ms - 88[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"12"}}
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/12/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["12","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"12"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"12"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "twice"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/12/text [39m[32m200[39m [90m5 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"twice"}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[11]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[11]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[11]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[11]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[11]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=14]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"13"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m21 ms - 88[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"13"}}
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/13/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["13","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"13"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"13"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "seek"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/13/text [39m[32m200[39m [90m5 ms - 78[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"seek"}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//android.support.v7.widget.RecyclerView/android.widget.TextView[12]"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["xpath","//android.support.v7.widget.RecyclerView/android.widget.TextView[12]","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[12]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.support.v7.widget.RecyclerView/android.widget.TextView[12]","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding '//android.support.v7.widget.RecyclerView/android.widget.TextView[12]' using 'XPATH' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=15]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"14"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m30 ms - 88[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"14"}}
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/14/text[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getText() with args: ["14","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"14"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"14"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.getText() result: "pull"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/14/text [39m[32m200[39m [90m5 ms - 78[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"pull"}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.seele.tigerwallet:id/btn_record"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["id","com.seele.tigerwallet:id/btn_record","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_record","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_record","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_record' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_record]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"15"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"15"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[32m200[39m [90m7 ms - 88[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/15/click[39m
+[35m[HTTP][39m [90m{"id":"15"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.click() with args: ["15","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"15"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"15"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element/15/click [39m[32m200[39m [90m255 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().text(\"”figure\")"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"”figure\")","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 329 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 866 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 1414 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 1944 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 2477 ms so far
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 3017 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 3556 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 4074 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 4617 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 5149 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 5681 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 6213 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 6746 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 7276 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 7809 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 8347 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 8878 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 9416 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 9948 ms so far
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"”figure\")","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("”figure")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("”figure")
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "”figure"
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=”figure]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[31m500[39m [90m10483 ms - 164[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getScreenshot() with args: ["5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell dumpsys input'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAtAAAAUACAYAAABuzmU9AACAAElEQVR4AezBB3hUBfro4V/OTCa9QkIICaSQQAghofcivYgiAgoK7IoKuIJl17Krrrrq2tbeu4KAiEhVSiChpRAgIdRAIKSQENJ7n5l7z73P3Gee3JQTxP0v7Pe+Nub/DSGEEEIIIYQmCkIIIYQQQgjNFIQQQgghhBCaKQghhBBCCCE0UxBCCCGEEEJopiCEEEIIIYTQTEEIIYQQQgihmYIQQgghhBBCMwUhhBBCCCGEZgpCCCGEEEIIzRSEEEIIIYQQmikIIYQQQgghNFMQQgghhBBCaKYghBBCCCGE0ExBCCGEEEIIoZmCEEIIIYQQQjMFIYQQQgghhGYKQgghhBBCCM0UhBBCCCGEEJopCCGEEEIIITRTEEIIIYQQQmimIIQQQgghhNBMQQghhBBCCKGZghBCCCGEEEIzBSGEEEIIIYRmCkIIIYQQQgjNFIQQQgghhBCaKQghhBBCCCE0UxBCCCGEEEJopiCEEEIIIYTQTEEIIYQQQgihmYIQQgghhBBCMwUhhBBCCCGEZgpCCCGEEEIIzRSEEEIIIYQQmikIIYQQQgghNFMQQgghhBBCaKYghBBCCCGE0ExBCCGEEEIIoZmCEEIIIYQQQjMFIYQQQgghhGYKQgghhBBCCM0UhBBCCCGEEJopCCGEEEIIITRTEEIIIYQQQmimIIQQQgghhNBMQQghhBBCCKGZghBCCCGEEEIzBSGEEEIIIYRmCkIIIYQQQgjNFIQQQgghhBCaKQghhBBCCCE0UxBCCCGEEEJopiCEEEIIIYTQTEEIIYQQQgihmYIQQgghhBBCMwUhhBBCCCGEZgpCCCGEEEIIzRSEEEIIIYQQmikIIYQQQgghNFMQQgghhBBCaKYghBBCCCGE0ExBCCGEEEIIoZmCEEIIIYQQQjMFIYQQQgghhGYKQgghhBBCCM0UhBBCCCGEEJopCCGEEEIIITRTEEIIIYQQQmimIIQQ...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/screenshot [39m[32m200[39m [90m451 ms - 66594[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.seele.tigerwallet:id/btn_ok"}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.findElement() with args: ["id","com.seele.tigerwallet:id/btn_ok","5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 30 ms so far
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 562 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 1095 ms so far
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 1628 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 2159 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 2692 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 3210 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 3748 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 4280 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 4825 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 5354 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 5886 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 6419 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 6955 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 7510 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 8028 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 8701 ms so far
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 9231 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 9764 ms so far
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.seele.tigerwallet:id/btn_ok","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.seele.tigerwallet:id/btn_ok' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.seele.tigerwallet:id/btn_ok]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 7 to NoSuchElementError
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/element [39m[31m500[39m [90m10302 ms - 164[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getScreenshot() with args: ["5122e912-e8d5-4c6f-9720-7acb272c21b4"]
+[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell dumpsys input'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAtAAAAUACAYAAABuzmU9AACAAElEQVR4AezBB3hUBfro4V/OTCa9QkIICaSQQAghofcivYgiAgoK7IoKuIJl17Krrrrq2tbeu4KAiEhVSiChpRAgIdRAIKSQENJ7n5l7z73P3Gee3JQTxP0v7Pe+Nub/DSGEEEIIIYQmCkIIIYQQQgjNFIQQQgghhBCaKQghhBBCCCE0UxBCCCGEEEJopiCEEEIIIYTQTEEIIYQQQgihmYIQQgghhBBCMwUhhBBCCCGEZgpCCCGEEEIIzRSEEEIIIYQQmikIIYQQQgghNFMQQgghhBBCaKYghBBCCCGE0ExBCCGEEEIIoZmCEEIIIYQQQjMFIYQQQgghhGYKQgghhBBCCM0UhBBCCCGEEJopCCGEEEIIITRTEEIIIYQQQmimIIQQQgghhNBMQQghhBBCCKGZghBCCCGEEEIzBSGEEEIIIYRmCkIIIYQQQgjNFIQQQgghhBCaKQghhBBCCCE0UxBCCCGEEEJopiCEEEIIIYTQTEEIIYQQQgihmYIQQgghhBBCMwUhhBBCCCGEZgpCCCGEEEIIzRSEEEIIIYQQmikIIYQQQgghNFMQQgghhBBCaKYghBBCCCGE0ExBCCGEEEIIoZmCEEIIIYQQQjMFIYQQQgghhGYKQgghhBBCCM0UhBBCCCGEEJopCCGEEEIIITRTEEIIIYQQQmimIIQQQgghhNBMQQghhBBCCKGZghBCCCGEEEIzBSGEEEIIIYRmCkIIIYQQQgjNFIQQQgghhBCaKQghhBBCCCE0UxBCCCGEEEJopiCEEEIIIYTQTEEIIYQQQgihmYIQQgghhBBCMwUhhBBCCCGEZgpCCCGEEEIIzRSEEEIIIYQQmikIIYQQQgghNFMQQgghhBBCaKYghBBCCCGE0ExBCCGEEEIIoZmCEEIIIYQQQjMFIYQQQgghhGYKQgghhBBCCM0UhBBCCCGEEJopCCGEEEIIITRTEEIIIYQQQmimIIQQ...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/5122e912-e8d5-4c6f-9720-7acb272c21b4/screenshot [39m[32m200[39m [90m406 ms - 66594[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.seele.tigerwallet","appActivity":"com.seele.tigerwallet.ui.activtiy.WelcomeActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"platformVersion":"8.0.0","unicodeKeyboard":true,"sessionOverride":true,"udid":"127.0.0.1:62025","platformName":"Android","deviceName":"xiaomi","resetKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appPackage":"com.seele.tigerwallet","appActivity":"com.seele.tigerwallet.ui.activtiy.WelcomeActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"platformVersion":"8.0.0","unicodeKeyboard":true,"sessionOverride":true,"udid":"127.0.0.1:62025","platformName":"Android","deviceName":"xiaomi","resetKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1534487491561 (14:31:31 GMT+0800 (中国标准时间))
+[35m[Appium][39m Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[35m[Appium][39m Creating new AndroidDriver (v2.7.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   udid: 127.0.0.1:62025
+[35m[Appium][39m   appPackage: com.seele.tigerwallet
+[35m[Appium][39m   appActivity: com.seele.tigerwallet.ui.activtiy.WelcomeActivity
+[35m[Appium][39m   noReset: true
+[35m[Appium][39m   noSign: true
+[35m[Appium][39m   newCommandTimeout: 600
+[35m[Appium][39m   platformVersion: 8.0.0
+[35m[Appium][39m   unicodeKeyboard: true
+[35m[Appium][39m   sessionOverride: true
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   deviceName: xiaomi
+[35m[Appium][39m   resetKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"udid":"127.0.0.1:62025","...
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: sessionOverride.
+[35m[BaseDriver][39m Session created with session id: a294a655-0c25-429b-90a0-83ac56c0ef60
+[debug] [35m[AndroidDriver][39m Getting Java version
+[35m[AndroidDriver][39m Java version is: 1.8.0_131
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 2 device(s) connected
+[35m[AndroidDriver][39m Using device: 127.0.0.1:62025
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:62025
+[35m[AndroidDriver][39m App file was not listed, instead we're going to run com.seele.tigerwallet directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell pm list packages com.seele.tigerwallet'
+[35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 wait-for-device'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell pm list packages io.appium.settings'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell ps'
+[debug] [35m[AndroidDriver][39m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22
+[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell settings put secure mock_location 1'
+[35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.
+[35m[AndroidDriver][39m Got language: 'null' and country: 'null'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support
+[debug] [35m[AndroidDriver][39m Pushing unicode ime to device...
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 install C\:\\Users\\admin\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\_appium-android-ime\@2.0.0\@appium-android-ime\\bin\\UnicodeIME-debug.apk'
+[debug] [35m[ADB][39m Install command stdout: [100%] /data/local/tmp/UnicodeIME-debug.apk
+[debug] [35m[ADB][39m C:\Users\admin\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-ime@2.0.0@appium-andr...deIME-debug.apk: 1 file pushed. 2.4 MB/s (36795 bytes in 0.015s)
+[debug] [35m[ADB][39m 	pkg: /data/local/tmp/UnicodeIME-debug.apk
+[debug] [35m[ADB][39m Failure [INSTALL_FAILED_ALREADY_EXISTS]
+[debug] [35m[ADB][39m Application 'C:\Users\admin\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-ime@2.0.0@appium-android-ime\bin\UnicodeIME-debug.apk' already installed. Continuing.
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell settings get secure default_input_method'
+[debug] [35m[AndroidDriver][39m Unsetting previous IME io.appium.android.ime/.UnicodeIME
+[debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.android.ime/.UnicodeIME'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell ime enable io.appium.android.ime/.UnicodeIME'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell ime set io.appium.android.ime/.UnicodeIME'
+[debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.unlock
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell pm list packages io.appium.unlock'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.unlock'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell dumpsys package io.appium.unlock'
+[debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 5.1.1
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell wm size'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': SM-G955F
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': samsung
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4445 to device: 4724
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 forward tcp\:4445 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 push C\:\\Users\\admin\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\_appium-android-bootstrap\@2.13.0\@appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar /data/local/tmp/'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell ps'
+[debug] [35m[ADB][39m Attempting to kill process 2610
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell kill -0 2610'
+[debug] [35m[ADB][39m Running 'D:\sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62025 shell kill 2610'
