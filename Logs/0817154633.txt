@@ -1,2 +1,0 @@
-2018-08-17 15:46:33:4633  [DEBUG] { DosCmd: execCmd }  execute  command task kill -F -PID node.exe Succeed
-2018-08-17 15:46:33:4633  [INFO]  { DosCmd: killServer }  kill server node  Succeed
