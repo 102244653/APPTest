@@ -1,5 +1,8 @@
-AppiumTestByStep
-本项目是一个APP自动化测试工程【参考项目：https://github.com/hagyao520/Appium】，目前只支持android系统app，项目结构如下：
+
+AppiumTestByStep【参考项目：https://github.com/hagyao520/Appium】
+
+本项目是一个APP自动化测试工程，目前只支持android系统app，项目结构如下：
+
 1.Actionutils    针对appium的接口指令进行二次封装，增加日志和一些必要判断，包括清除、滑动、输入、dos命令等操作
 2.Base           本部分为用例结构设计，主要包括测试用例集合[TestUnit],测试用例[TestCase],测试步骤[TestStep],测试基础变量[TestBase],操作指令集[PageAction]
 3.ElementUtil    本部分优化了元素查找，添加只能等待提高元素查取成功的概率
