@@ -4,7 +4,7 @@
     <case id="case1"
         name="验证在Android系统中，首次启动微信APP，点击登录按钮后，可以正常进入登录界面">
         <!--<step action="waitForced" value="3000" desc="强制等待3秒"/>-->
-        <step action="loginwechat" value="13534173939:xiongfei120406" desc="登录微信"/>
+        <step action="loginwechat" value="13534173939:4132135" desc="登录微信"/>
     </case>
 
 </unit>
