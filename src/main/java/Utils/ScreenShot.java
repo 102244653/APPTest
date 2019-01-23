@@ -18,12 +18,12 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 
-public class ScreenShot extends InitDriver {
+public class ScreenShot  {
     private static Logger log= LoggerFactory.getLogger(ScreenShot.class);
     static String path= System.getProperties().getProperty("user.dir") + "/TestReport/";
 
     //自定义截图名
-    public static String screenshot(String name) {
+    public static String screenshot(AndroidDriver<AndroidElement> driver,String name) {
         String picname;
         AndroidDriver augmentedDriver = (AndroidDriver) new Augmenter().augment(driver);
         File file = ((TakesScreenshot) augmentedDriver).getScreenshotAs(OutputType.FILE);
@@ -45,7 +45,7 @@ public class ScreenShot extends InitDriver {
     }
 
     //按时间截图
-    public static String TakeScreen() {
+    public static String TakeScreen(AndroidDriver<AndroidElement> driver) {
         String picname;
         AndroidDriver augmentedDriver = (AndroidDriver) new Augmenter().augment(driver);
         File file = ((TakesScreenshot) augmentedDriver).getScreenshotAs(OutputType.FILE);
@@ -69,7 +69,7 @@ public class ScreenShot extends InitDriver {
     }
 
     //针对元素进行截图
-    public void TakeScreenForEle(AndroidElement element, String path, String fileName) throws Exception{
+    public void TakeScreenForEle(AndroidDriver<AndroidElement> driver,AndroidElement element, String path, String fileName) throws Exception{
         AndroidDriver augmentedDriver = (AndroidDriver) new Augmenter().augment(driver);
         // 获得element的位置和大小
         Point location = element.getLocation();
@@ -95,7 +95,7 @@ public class ScreenShot extends InitDriver {
     /**
      * 自定义截图路径和名字
      **/
-    public  String screenShots(String path,String name) {
+    public  String screenShots(AndroidDriver<AndroidElement> driver,String path,String name) {
 
         String picname=name+".png";
         AndroidDriver augmentedDriver = (AndroidDriver) new Augmenter().augment(driver);

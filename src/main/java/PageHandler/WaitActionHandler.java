@@ -33,7 +33,7 @@ public class WaitActionHandler {
 	public void androidImplicit(TestStep step){
 		System.out.println("『正常测试』开始执行: " + "<" +step.getDesc() + ">");
 		long waitTime = Long.valueOf(step.getValue());
-		step.getDriver().manage().timeouts().implicitlyWait(waitTime, TimeUnit.MILLISECONDS);
+		step.getAndroidDriver().manage().timeouts().implicitlyWait(waitTime, TimeUnit.MILLISECONDS);
 	}
 	
 }

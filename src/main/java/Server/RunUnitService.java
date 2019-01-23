@@ -81,40 +81,8 @@ public class RunUnitService {
                 e.printStackTrace();
             }
         }
-
     }
 
-    /**
-     * <br>根据step元素的值解析出对应的方法名</br>
-     * 作用是将"-"后面的第一个字母转为大写，并且去掉“-”
-     *
-     * @param actionKey
-     * @return
-     */
-    private String getMethodName(String actionKey){
-        if(actionKey == null || "".equals(actionKey))
-            throw new RuntimeException("empty action key");
-
-        char[] arr = actionKey.toCharArray();
-        char prevChar = '\0';
-        StringBuilder sb = new StringBuilder();
-        char splitChar = '-';
-
-        for(char c : arr){
-            if(c == splitChar){
-                prevChar = c;
-                continue;
-            }
-            if(prevChar == splitChar) {
-                sb.append(Character.toUpperCase(c));
-            } else {
-                sb.append(c);
-            }
-            prevChar = c;
-        }
-
-        return sb.toString();
-    }
 
     /**
      * <br>执行完毕，退出App程序</br>

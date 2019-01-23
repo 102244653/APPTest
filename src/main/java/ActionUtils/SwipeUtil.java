@@ -1,20 +1,19 @@
 package ActionUtils;
 
 import ElementUtil.WaitElement;
-import Server.InitDriver;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.JavascriptExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static ElementUtil.GetByLocator.getLocator;
+import static ElementUtil.GetByLocator.getAppElement;
 
-public class SwipeUtil extends InitDriver {
+public class SwipeUtil  {
     private static Logger log = LoggerFactory.getLogger(SwipeUtil.class);
-    static  io.appium.java_client.TouchAction touch=new io.appium.java_client.TouchAction(driver);
 
     //上滑(num--滑动次数)
-    public static void Swipe(String point,int num) {
+    public static void Swipe(AndroidDriver<AndroidElement> driver,String point, int num) {
         try {
             int width = driver.manage().window().getSize().width;
             int height = driver.manage().window().getSize().height;
@@ -51,16 +50,17 @@ public class SwipeUtil extends InitDriver {
         }
     }
 
-    public static void Swipe(String elementname){
-        AndroidElement ele=WaitElement.findElement(getLocator(elementname));//定位到元素
+    public static void Swipe(AndroidDriver<AndroidElement> driver,String elementname){
+        AndroidElement ele=getAppElement(driver,elementname);//定位到元素
         WaitUtil.sleep(1000);
         JavascriptExecutor dj=(JavascriptExecutor)driver;//将Driver实例化为js对象
         dj.executeScript("arguments[0].scrollIntoViewIfNeeded(true);", ele);//滑动到上面定位到的元素的位置
     }
 
-    public static void SwipeElement(String point,String elementname1, AndroidElement elementname2){
+    public static void SwipeElement(AndroidDriver<AndroidElement> driver,String point,String elementname1, AndroidElement elementname2){
+        io.appium.java_client.TouchAction touch=new io.appium.java_client.TouchAction(driver);
         //获取待操作元素
-        AndroidElement element = WaitElement.findElement(getLocator(elementname1));
+        AndroidElement element = getAppElement(driver,elementname1);
         int x=elementname2.getLocation().getX();
         int y=elementname2.getLocation().getY();
         int width=elementname2.getSize().getWidth();
@@ -91,17 +91,18 @@ public class SwipeUtil extends InitDriver {
     }
 
     //移动到某元素
-    public static void moveToEle(String elementname){
-        touch.moveTo(WaitElement.findElement(getLocator(elementname)));
+    public static void moveToEle(AndroidDriver<AndroidElement> driver,String elementname){
+        io.appium.java_client.TouchAction touch=new io.appium.java_client.TouchAction(driver);
+        touch.moveTo(getAppElement(driver,elementname));
     }
 
     //放大
-    public static void zoom(int x, int y) {
+    public static void zoom(AndroidDriver<AndroidElement> driver,int x, int y) {
         driver.zoom(x,y);
     }
 
     //缩小，以（x,y）为基准，计算得出（x,y-100）,(x,y+100)两个点，然后2个手指按住这两个点同时滑到（x,y）
-    public static void pinch(int x, int y){
+    public static void pinch(AndroidDriver<AndroidElement> driver,int x, int y){
         driver.pinch(x,y);
     }
 

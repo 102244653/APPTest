@@ -8,9 +8,9 @@ import java.util.Map;
 public class TestStep extends TestBase{
 
     /**
-     * 当前步骤的行为，调用StepAction中的方法
+     * 当前步骤的行为，调用PageAction中的方法
      **/
-    private PageAction action;
+    public PageAction action;
 
 
     /**
@@ -82,4 +82,100 @@ public class TestStep extends TestBase{
      * 检测结果不匹配时的提示信息，用于记录到测试报告中
      */
     private String message;
+
+    public PageAction getAction() {
+        return action;
+    }
+
+    public void setAction(PageAction action) {
+        this.action = action;
+    }
+
+    public String getElement() {
+        return element;
+    }
+
+    public void setElement(String locator) {
+        this.element = locator;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public Map<String,String> getDetails() {
+        return details;
+    }
+
+    public void setDetails(Map<String,String> details) {
+        this.details = details;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public String getKeys() {
+        return keys;
+    }
+
+    public void setKeys(String keys) {
+        this.keys = keys;
+    }
+
+    public String getExpect() {
+        return expect;
+    }
+
+    public void setExpect(String expect) {
+        this.expect = expect;
+    }
+
+    public String getCaseid() {
+        return caseid;
+    }
+
+    public void setCaseid(String caseid) {
+        this.caseid = caseid;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
 }

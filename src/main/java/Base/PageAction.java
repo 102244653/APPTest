@@ -2,7 +2,6 @@ package Base;
 
 import PageHandler.WaitActionHandler;
 import PageHandler.WechatLoginHandler;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,17 +10,14 @@ public enum PageAction {
     /**
      * name  方法名  ANDROID_SET
      * key  指令名称(关键字)    string-set
-     *指令描速   Android端设置值到全局
-     * 所属类   class   String.class
+     *desc 指令描速   Android端设置值到全局
+     * handler 所属类   class   String.class
      * */
     //等待操作
     waitForced("waitForced", "强制等待",WaitActionHandler .class),
     androidImplicit("androidImplicit", "Android端隐式等待", WaitActionHandler.class),
-
     //微信登录
-    loginwchat("loginwchat","登录微信", WechatLoginHandler.class)
-
-    ;
+    loginwechat("loginwechat","登录微信", WechatLoginHandler.class);
 
 
 
@@ -67,7 +63,5 @@ public enum PageAction {
         return this.handler;
     }
 
-    public void run(TestStep step) throws Exception{
-
-    }
+    public void run(TestStep step) throws Exception{}
 }

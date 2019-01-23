@@ -1,9 +1,7 @@
 package Server;
 
-import Base.PageAction;
-import Base.TestCase;
-import Base.TestStep;
-import Base.TestUnit;
+import Base.*;
+import org.testng.annotations.Test;
 import org.w3c.dom.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -84,10 +82,10 @@ public class AndroidXmlAnalytic  extends InitDriver{
                 if (testCase == null)
                     continue;
 
-                if (caseMap.containsKey(testCase.getCaseid()))
-                    throw new RuntimeException("存在多个" + testCase.getCaseid() + "，请检查id配置");
+                if (caseMap.containsKey(testCase.getId()))
+                    throw new RuntimeException("存在多个" + testCase.getId() + "，请检查id配置");
                 else
-                    caseMap.put(testCase.getCaseid(), testCase);
+                    caseMap.put(testCase.getId(), testCase);
             }
 
             testUnit = new TestUnit();
@@ -139,14 +137,13 @@ public class AndroidXmlAnalytic  extends InitDriver{
             return null;
 
         TestStep testStep = initByAttributes(element.getAttributes(), new TestStep());
-        testStep.setDriver(driver);
+        testStep.setAndroidDriver(driver);
 
         return testStep;
     }
 
     /**
      * <br>根据xml文件中的元素属性为对象的对应字段注入值</br>
-     *
      * @param attrs
      * @param t 需要实例化并注入字段值的对象
      * @return
@@ -172,6 +169,7 @@ public class AndroidXmlAnalytic  extends InitDriver{
         return t;
     }
 
+
     /**
      * <br>通过反射为对象的对应字段注入值</br>
      * @param name
@@ -190,16 +188,18 @@ public class AndroidXmlAnalytic  extends InitDriver{
 
         try {
             String methodStr = name.substring(0, 1).toUpperCase() + name.substring(1);
-
             //如果名称是cancel，则调用isCancel()方法，主要是为了语义上的直观
             getter = clazz.getMethod(("cancel".equals(name) ? "is" : "get") + methodStr, new Class<?>[] {});
             setter = clazz.getMethod("set" + methodStr, getter.getReturnType());
-
             if ("action".equals(name))
-                //根据PageAction类中的map来获取名称对应的StepAction（枚举）实例
+               //根据StepAction类中的map来获取名称对应的StepAction（枚举）实例
                 setter.invoke(t, PageAction.action(value));
+            else if ("cancel".equals(name))
+                setter.invoke(t, "true".equals(value) ? true : false);
             else if("details".equals(name))
                 setter.invoke(t,parseDetail(value));
+            else if("values".equals(name))
+                setter.invoke(t,value.split(":"));
             else
                 setter.invoke(t, value);
         } catch (Exception e) {
@@ -219,7 +219,6 @@ public class AndroidXmlAnalytic  extends InitDriver{
     public static Map<String,String> parseDetail(String detail){
         HashMap<String,String> map = new HashMap<>();
         String[] strarr = detail.split(";");
-
         for(String str : strarr){
             map.put(str.split(":")[0], str.split(":")[1]);
         }
@@ -229,5 +228,6 @@ public class AndroidXmlAnalytic  extends InitDriver{
     public static void quiteapp(){
         driver.closeApp();
     }
+
 
 }

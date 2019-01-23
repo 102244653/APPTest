@@ -12,21 +12,15 @@ public class WeChatLogin {
 	private static RunUnitService runService;
 		
 	@BeforeTest
-	private void stup() throws Exception{
+	public void stup() {
 		TestUnit testunit = AndroidXmlAnalytic.ParseTest("com.tencent.mm","com.tencent.mm.ui.LauncherUI","5.1","A10ABNQ6T3TJ","NewLogin.xml");
 		runService = new RunUnitService(testunit);
 		System.out.println("------------------【微信登录流程的测试场景点】------------------");
 	}
-	
-	@Test
+		@Test
 	public void case1() throws Exception{
 		runService.runCase("case1");
 	}
-//
-//	@Test
-//	public void case2() throws Exception{
-//		runService.runCase("case2");
-//	}
 	
 	@AfterTest
 	public void TearDown(){

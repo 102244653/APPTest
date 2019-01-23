@@ -16,12 +16,12 @@ public class TestCase extends TestBase{
     }
 
     public String getCaseName() {
-        return super.getCasename();
+        return super.getName();
     }
 
     @Override
     public String toString() {
-        return "TestCase "+super.getCasename()+" [steps=" + steps + "]";
+        return "TestCase "+super.getName()+" [steps=" + steps + "]";
     }
 
 

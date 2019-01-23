@@ -14,12 +14,12 @@ import java.util.List;
 /**
  * Created by Administrator on 2017/9/4.
  */
-public class WaitElement extends InitDriver {
+public class WaitElement  {
 
     private static Logger log = LoggerFactory.getLogger(WaitElement.class);
 
     //等待单个元素
-    public static AndroidElement findElement(By by) {
+    public static AndroidElement findElement(AndroidDriver<AndroidElement> driver,By by) {
         AndroidElement AppElement=null;
         try {
             //等待元素出现，10s之后即超时
@@ -40,7 +40,7 @@ public class WaitElement extends InitDriver {
     }
 
     //等待多个元素
-    public static List<AndroidElement> findElements( By by) {
+    public static List<AndroidElement> findElements(AndroidDriver<AndroidElement> driver, By by) {
         List<AndroidElement> AppElements = null;
         try {
             //等待元素出现，10s之后即超时
@@ -57,21 +57,21 @@ public class WaitElement extends InitDriver {
     }
 
     //从元素集合中查找元素
-    public static AndroidElement getElement(final By by,int I){
+    public static AndroidElement getElement(AndroidDriver<AndroidElement> driver,final By by,int I){
         //by一般是菜单定位
-        AndroidElement AppElement=findElements(by).get(I);
+        AndroidElement AppElement=findElements(driver,by).get(I);
         return AppElement;
     }
 
     //等待某个元素xs直到出现
-    public static boolean waitXS(By by, int i){
+    public static boolean waitXS(AndroidDriver<AndroidElement> driver,By by, int i){
         boolean isexit=false;
         if(i<1){
             log.error("等待时间必须大于1s");
             return isexit;
         }
         for (int second = 0;second<=i; second++) {
-            AndroidElement Ele=findElement(by);
+            AndroidElement Ele=findElement(driver,by);
             if (Ele!= null){
                 isexit= true;
                 break;
@@ -84,10 +84,10 @@ public class WaitElement extends InitDriver {
     }
 
     //等待某个元素10s直到出现
-    public static boolean  waitE10S(By by){
+    public static boolean  waitE10S(AndroidDriver<AndroidElement> driver,By by){
         boolean isexit=false;
         for (int second = 0;second<=10; second++) {
-            AndroidElement Ele=findElement(by);
+            AndroidElement Ele=findElement(driver,by);
             if (Ele!= null){
                 isexit= true;break;
             }else {
@@ -99,9 +99,9 @@ public class WaitElement extends InitDriver {
     }
 
     //判断某个元素是否出现
-    public static boolean findE(By by){
+    public static boolean findE(AndroidDriver<AndroidElement> driver,By by){
         boolean isexit1 ;
-        AndroidElement Ele=findElement(by);
+        AndroidElement Ele=findElement(driver,by);
         if (Ele!= null){
             isexit1= true;
         }else{
@@ -112,10 +112,10 @@ public class WaitElement extends InitDriver {
     }
 
     //判断某个元素显示在界面
-    public static boolean Eledisplay(By by){
+    public static boolean Eledisplay(AndroidDriver<AndroidElement> driver,By by){
         boolean isdisplay=false;
         for (int i = 0; i <2; i++) {
-            AndroidElement Ele = findElement(by);
+            AndroidElement Ele = findElement(driver,by);
             if (Ele == null||Ele.isDisplayed() == false) {
                 WaitUtil.sleep(1000);
             }else {
