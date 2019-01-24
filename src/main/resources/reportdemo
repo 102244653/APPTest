@@ -6979,10 +6979,10 @@
             width: 300px;
         }
         #detailBody > tr > td:nth-child(5){
-            width: 400px;
+            width: 600px;
         }
         #detailBody > tr > td:nth-child(6){
-            width: 300px;
+            width: 200px;
         }
         #detailBody > tr > td:nth-child(7){
             width: 200px;

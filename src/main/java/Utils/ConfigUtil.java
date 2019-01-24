@@ -23,7 +23,7 @@ public class ConfigUtil {
         Properties properties = new Properties();
         try {
             InputStream inputStream = new FileInputStream(config);
-            BufferedReader bf = new BufferedReader(new InputStreamReader(inputStream, "utf-8"));
+            BufferedReader bf = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
             properties.load(bf);
             inputStream.close(); // 关闭流
         } catch (IOException e) {

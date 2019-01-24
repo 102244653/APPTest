@@ -33,7 +33,7 @@ public class CheckActionHandler  {
 		ScreenShot.screenshot(driver,CaseID);
 		//统计所有结果
 		String[] Result=new String[7];
-		Result[0]=CaseID;Result[1]=step.getDesc();Result[2]=step.getValue();Result[3]=Expected;
+		Result[0]=CaseID;Result[1]=step.getDesc();Result[2]=step.getValue();Result[3]=step.getElement()+":"+Expected;
 		Result[4]=ScreenShot.screenshot(driver,CaseID);
 		try {
 			Actual= getText(driver,step.getElement());
