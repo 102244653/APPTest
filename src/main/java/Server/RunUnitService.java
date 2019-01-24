@@ -91,8 +91,6 @@ public class RunUnitService {
        AndroidXmlAnalytic.quiteapp();
     }
 
-
-
     /**
      * <br></br>
      *

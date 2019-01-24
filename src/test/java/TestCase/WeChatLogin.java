@@ -2,12 +2,13 @@ package TestCase;
 
 import Base.TestUnit;
 import Server.AndroidXmlAnalytic;
+import Server.InitHtmlReport;
 import Server.RunUnitService;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class WeChatLogin {
+public class WeChatLogin extends CreatHtmlReport{
 	
 	private static RunUnitService runService;
 		
@@ -17,7 +18,7 @@ public class WeChatLogin {
 		runService = new RunUnitService(testunit);
 		System.out.println("------------------【微信登录流程的测试场景点】------------------");
 	}
-		@Test
+	@Test
 	public void case1() throws Exception{
 		runService.runCase("case1");
 	}
@@ -25,5 +26,10 @@ public class WeChatLogin {
 	@AfterTest
 	public void TearDown(){
 		runService.closeApp();
+		try {
+			new InitHtmlReport().CreatHtmlReport();
+		}catch (Exception e){
+			e.printStackTrace();
+		}
 	}
 }

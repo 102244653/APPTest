@@ -1,5 +1,6 @@
 package Base;
 
+import PageHandler.CheckActionHandler;
 import PageHandler.WaitActionHandler;
 import PageHandler.WechatLoginHandler;
 import java.util.HashMap;
@@ -16,6 +17,8 @@ public enum PageAction {
     //等待操作
     waitForced("waitForced", "强制等待",WaitActionHandler .class),
     androidImplicit("androidImplicit", "Android端隐式等待", WaitActionHandler.class),
+    caseCheck("caseCheck", "检查用例执行结果", CheckActionHandler.class),
+    stepCheck("stepCheck", "检查步骤执行结果", CheckActionHandler.class),
     //微信登录
     loginwechat("loginwechat","登录微信", WechatLoginHandler.class);
 

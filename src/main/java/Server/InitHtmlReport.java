@@ -1,27 +1,21 @@
 package Server;
-
-
-import Utils.DateUtil;
-
+import Utils.ScreenShot;
 import java.io.*;
 
 public class InitHtmlReport {
-    public static String TitleName="测试报告";
-    public static final String OUTPUT_FOLDER = "./TestReport/";
-    public static String HtmlName= DateUtil.format(DateUtil.time8);
-    private static final String FILE_NAME ="API"+HtmlName+".html";
+    public static String TitleName="脉果儿APP-Android";
+    public static final String OUTPUT_FOLDER = "./TestReport/"+ ScreenShot.nowdata;
     //报告模板存放地址
     private String templatePath = System.getProperty("user.dir")+"/src/main/resources/reportdemo";
     //报告存放地址
-    //private String Reportpath =OUTPUT_FOLDER+"/"+dirc+"/"+FILE_NAME;
-    private String Reportpath =OUTPUT_FOLDER+"index.html";
+    private String Reportpath =OUTPUT_FOLDER+"/"+"index.html";
 
     public  void CreatHtmlReport()throws Exception{
         try {
             String template = this.read(templatePath);
-//            File dir = new File(OUTPUT_FOLDER+"/"+dirc);
-//            if (!dir.exists())
-//            {dir.mkdirs();}
+            File dir = new File(OUTPUT_FOLDER);
+            if (!dir.exists())
+            {dir.mkdirs();}
             BufferedWriter output = new BufferedWriter( new OutputStreamWriter(new FileOutputStream(new File(Reportpath)),"UTF-8"));
             template = template.replaceFirst("\\$\\{resultData\\}", ResultData.GetResultData());
             output.write(template);

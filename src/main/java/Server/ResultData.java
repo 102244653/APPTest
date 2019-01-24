@@ -30,22 +30,22 @@ public class ResultData {
             String[] data=AllCase.get(i);
             if(data.length==0){ continue; }
             String result="---";
-            if(data[7]=="PASS"){
+            if(data[5]=="PASS"){
                 result="成功";
             }
-            if(data[7]=="FAIL"){
+            if(data[5]=="FAIL"){
                 result="失败";
             }
-            if(data[7]=="SKIP"){
+            if(data[5]=="SKIP"){
                 result="跳过";
             }
             if(i!=0){ json = json + ",\n"; }
             json=json+"\n{" +
+                    "\"apiname\":\""+data[0]+ "\",\n" +
                     "\"casename\":\""+data[1]+ "\",\n" +
-                    "\"actiontype\":\""+data[2]+ "\",\n" +
-                    "\"testdata\":\""+data[3]+ "\",\n" +
-                    "\"real\":\""+data[4]+ "\",\n" +
-                    "\"excepct\":\""+data[5]+ "\",\n" +
+                    "\"requesttype\":\""+data[2]+ "\",\n" +
+                    "\"requestbody\":\""+data[3]+ "\",\n" +
+                    "\"excepct\":\""+data[4]+ "\",\n" +
                     "\"result\":\""+result+ "\",\n" +
                     "\"log\":[`"+data[6].replaceAll("\"","'")+ "`]\n" +
                     "}\n";
@@ -56,7 +56,7 @@ public class ResultData {
     public static String GetResultData() throws Exception {
         String resultdata= "{" +
                 "\"testName\":\""+InitHtmlReport.TitleName+"\",\n"+
-               // "\"testadress\":\""+ TestUrl.TestUrl+"\",\n"+
+                "\"testadress\":\"测试\",\n"+
                 "\"testAll\":"+AllCase.size()+",\n"+
                 "\"testPass\":"+PassCase.size()+",\n"+
                 "\"testSkip\":"+SkipCase.size()+",\n"+

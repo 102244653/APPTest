@@ -20,8 +20,8 @@ import java.io.IOException;
 
 public class ScreenShot  {
     private static Logger log= LoggerFactory.getLogger(ScreenShot.class);
-    static String path= System.getProperties().getProperty("user.dir") + "/TestReport/";
-
+    public static String nowdata=DateUtil.format(DateUtil.time8);
+    static String path= System.getProperties().getProperty("user.dir") + "/TestReport/"+nowdata;
     //自定义截图名
     public static String screenshot(AndroidDriver<AndroidElement> driver,String name) {
         String picname;
@@ -29,12 +29,11 @@ public class ScreenShot  {
         File file = ((TakesScreenshot) augmentedDriver).getScreenshotAs(OutputType.FILE);
         try {
             //根据日期创建文件夹
-            String nowdata="ScreenShot";
-            File dir = new File(path +nowdata);
+            File dir = new File(path);
             if (!dir.exists())
             {dir.mkdirs();}
-            FileUtils.copyFile(file, new File(path +nowdata + "/" + name + ".png"));
-            picname=name+".png";
+            FileUtils.copyFile(file, new File(path + "/" + name + ".png"));
+            picname= name + ".png";
             log.info("截图："+picname);
         } catch (IOException e) {
             picname="001.png";
@@ -50,18 +49,15 @@ public class ScreenShot  {
         AndroidDriver augmentedDriver = (AndroidDriver) new Augmenter().augment(driver);
         File file = ((TakesScreenshot) augmentedDriver).getScreenshotAs(OutputType.FILE);
         try {
-            //根据日期创建文件夹
-            String nowdata= DateUtil.format(DateUtil.CHECK_LOG_FORMAT);
-            File dir = new File(path +nowdata);
+            File dir = new File(path);
             String time=new DateUtil().getdata(DateUtil.time8);
             if (!dir.exists())
             {dir.mkdirs();}
-            FileUtils.copyFile(file, new File(path + nowdata + "/" +
-                    time + ".png"));
-            picname=nowdata + "/" +time+ ".png";
+            FileUtils.copyFile(file, new File(path  + "/" + time + ".png"));
+            picname=time+ ".png";
             log.info("截图："+picname);
         } catch (IOException e) {
-            picname="MyTool.png";
+            picname="截图失败";
             log.error("截图失败！！");
             e.printStackTrace();
         }
@@ -95,20 +91,18 @@ public class ScreenShot  {
     /**
      * 自定义截图路径和名字
      **/
-    public  String screenShots(AndroidDriver<AndroidElement> driver,String path,String name) {
-
+    public  String screenShots(AndroidDriver<AndroidElement> driver,String path1,String name) {
         String picname=name+".png";
         AndroidDriver augmentedDriver = (AndroidDriver) new Augmenter().augment(driver);
         File file = ((TakesScreenshot) augmentedDriver).getScreenshotAs(OutputType.FILE);
         try {
-            File dir = new File(path);
+            File dir = new File(path+"/"+path1);
             if (!dir.exists())
             {dir.mkdirs();}
-            FileUtils.copyFile(file, new File(path +"/" + name + ".png"));
-            //FileUtils.copyFile(file, new File(path + "/" + picname));
-            log.error("ScreenShot: screenShots","截图："+path+picname);
+            FileUtils.copyFile(file, new File(path+"/"+path1 +"/" + name + ".png"));
+            log.error("ScreenShot: screenShots","截图："+path+"/"+path1 +"/"+picname);
         } catch (IOException e) {
-            picname="error";
+            picname="截图失败";
             log.error("ScreenShot: screenShots","截图失败");
             e.printStackTrace();
         }
