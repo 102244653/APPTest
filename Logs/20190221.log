@@ -1,0 +1,31 @@
+2019-02-21-16:12:04.116 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-02-21-16:12:14.383 [main] ERROR  ElementUtil.WaitElement:32>>元素:By.id: com.tencent.mm:id/e0y查找超时,测试被迫中止......
+2019-02-21-16:12:14.399 [main] ERROR  ElementUtil.WaitElement:36>>未查找到元素：By.id: com.tencent.mm:id/e0y
+2019-02-21-16:12:14.399 [main] INFO  PageHandler.CheckActionHandler:30>>『正常测试』开始执行: <手机号登录>
+2019-02-21-16:12:14.399 [main] INFO  Utils.DateUtil:51>>0221161214
+2019-02-21-16:12:15.867 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-02-21-16:12:17.117 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-02-21-16:12:17.117 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-02-21-16:12:27.149 [main] ERROR  ElementUtil.WaitElement:32>>元素:By.id: com.tencent.mm:id/oe查找超时,测试被迫中止......
+2019-02-21-16:12:27.149 [main] ERROR  ElementUtil.WaitElement:36>>未查找到元素：By.id: com.tencent.mm:id/oe
+2019-02-21-16:12:27.149 [main] INFO  Utils.DateUtil:51>>2019年02月21日 16:12:27
+2019-02-21-16:12:27.805 [main] INFO  Utils.DateUtil:51>>2019年02月21日 16:12:27
+2019-02-21-17:54:47.883 [main] INFO  Utils.DateUtil:51>>0221175447
+2019-02-21-17:54:47.887 [main] INFO  Utils.DateUtil:51>>2019年02月21日 17:54:47
+2019-02-21-17:56:25.574 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e4g
+2019-02-21-17:56:26.150 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e4g : 点击完成
+2019-02-21-17:56:27.650 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/kh
+2019-02-21-17:56:33.471 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：text	 获取的定位表达式: 下一步
+2019-02-21-17:56:34.512 [main] INFO  ActionUtils.ClickUtil:16>>text>下一步 : 点击完成
+2019-02-21-17:56:36.013 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：text	 获取的定位表达式: 请填写微信密码
+2019-02-21-17:56:42.661 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：text	 获取的定位表达式: 登录
+2019-02-21-17:56:44.095 [main] INFO  ActionUtils.ClickUtil:16>>text>登录 : 点击完成
+2019-02-21-17:56:44.096 [main] INFO  PageHandler.CheckActionHandler:31>>『正常测试』开始执行: <手机号登录>
+2019-02-21-17:56:44.097 [main] INFO  Utils.DateUtil:51>>0221175644
+2019-02-21-17:56:44.984 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-02-21-17:56:45.645 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-02-21-17:56:45.646 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-02-21-17:56:56.021 [main] ERROR  ElementUtil.WaitElement:32>>元素:By.id: com.tencent.mm:id/oe查找超时,测试被迫中止......
+2019-02-21-17:56:56.023 [main] ERROR  ElementUtil.WaitElement:36>>未查找到元素：By.id: com.tencent.mm:id/oe
+2019-02-21-17:56:56.028 [main] INFO  Utils.DateUtil:51>>2019年02月21日 17:56:56
+2019-02-21-17:56:56.734 [main] INFO  Utils.DateUtil:51>>2019年02月21日 17:56:56

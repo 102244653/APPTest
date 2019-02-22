@@ -95,8 +95,8 @@ public class TestStep extends TestBase{
         return element;
     }
 
-    public void setElement(String locator) {
-        this.element = locator;
+    public void setElement(String element) {
+        this.element = element;
     }
 
     public String getValue() {
@@ -105,6 +105,14 @@ public class TestStep extends TestBase{
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    public String[] getValues() {
+        return values;
+    }
+
+    public void setValues(String values) {
+        this.values= values.split(",");
     }
 
     public String getDesc() {

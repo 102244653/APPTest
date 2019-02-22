@@ -14,7 +14,7 @@ public class WeChatLogin extends CreatHtmlReport{
 		
 	@BeforeTest
 	public void stup() {
-		TestUnit testunit = AndroidXmlAnalytic.ParseTest("com.tencent.mm","com.tencent.mm.ui.LauncherUI","5.1","A10ABNQ6T3TJ","NewLogin.xml");
+		TestUnit testunit = AndroidXmlAnalytic.ParseTest("com.tencent.mm","com.tencent.mm.ui.LauncherUI","5.1","22dfc441","NewLogin.xml");
 		runService = new RunUnitService(testunit);
 		System.out.println("------------------【微信登录流程的测试场景点】------------------");
 	}

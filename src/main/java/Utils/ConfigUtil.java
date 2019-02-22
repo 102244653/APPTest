@@ -15,7 +15,9 @@ public class ConfigUtil {
            // LOG.error("请传人正确的配置文件信息");
             return null;
         }
-        return loadConfig(config).getProperty(key);
+        Properties p=loadConfig(config);
+        String value=p.getProperty(key);
+        return value;
     }
 
 

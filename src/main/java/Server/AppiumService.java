@@ -5,7 +5,7 @@ import java.io.IOException;
 public class AppiumService {
 
     String cmdPath = "cmd.exe /c start";
-    String appiumPath = "D:\\nodejs\\node_global\\appium.cmd";
+    String appiumPath = "F:\\nodejs\\node_global\\appium.cmd";
     String cmdappium = cmdPath + " " + appiumPath;
 
     public void appiumStart() throws IOException, InterruptedException {

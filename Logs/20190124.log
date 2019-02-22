@@ -1,0 +1,170 @@
+2019-01-24-10:45:07.159 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-10:45:09.205 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-10:45:10.720 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-10:45:15.925 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：text	 获取的定位表达式: 下一步
+2019-01-24-10:45:17.018 [main] INFO  ActionUtils.ClickUtil:16>>text>下一步 : 点击完成
+2019-01-24-10:45:18.534 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：text	 获取的定位表达式: 请填写微信密码
+2019-01-24-10:45:18.612 [main] INFO  Utils.DateUtil:51>>0124104518
+2019-01-24-10:45:18.612 [main] INFO  Utils.DateUtil:51>>2019年01月24日 10:45:18
+2019-01-24-10:57:28.426 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-10:57:29.051 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-10:57:30.566 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-10:57:35.676 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：text	 获取的定位表达式: 下一步
+2019-01-24-10:57:36.754 [main] INFO  ActionUtils.ClickUtil:16>>text>下一步 : 点击完成
+2019-01-24-10:57:38.269 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：text	 获取的定位表达式: 请填写微信密码
+2019-01-24-10:57:38.488 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <登录微信检查>
+2019-01-24-10:57:38.488 [main] INFO  Utils.DateUtil:51>>0124105738
+2019-01-24-10:57:38.832 [main] INFO  Utils.DateUtil:51>>2019年01月24日 10:57:38
+2019-01-24-11:01:26.368 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-11:01:28.523 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-11:01:38.565 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-11:01:45.394 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：text	 获取的定位表达式: 下一步
+2019-01-24-11:01:45.800 [main] INFO  ActionUtils.ClickUtil:16>>text>下一步 : 点击完成
+2019-01-24-11:01:48.472 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：text	 获取的定位表达式: 请填写微信密码
+2019-01-24-11:02:09.131 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <登录微信检查>
+2019-01-24-11:02:09.131 [main] INFO  Utils.DateUtil:51>>0124110209
+2019-01-24-11:03:13.460 [main] INFO  Utils.DateUtil:51>>2019年01月24日 11:03:13
+2019-01-24-11:07:46.607 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-11:07:47.216 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-11:07:48.731 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-11:07:53.792 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-11:07:53.792 [main] INFO  Utils.DateUtil:51>>0124110753
+2019-01-24-11:07:55.167 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-11:09:02.655 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-11:09:15.200 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-11:10:19.474 [main] INFO  Utils.DateUtil:51>>2019年01月24日 11:10:19
+2019-01-24-11:13:12.423 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-11:13:13.002 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-11:13:14.505 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-11:13:19.601 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-11:13:19.602 [main] INFO  Utils.DateUtil:51>>0124111319
+2019-01-24-11:13:20.880 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-11:13:22.027 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-11:13:22.027 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-11:42:48.258 [main] INFO  Utils.DateUtil:51>>2019年01月24日 11:42:48
+2019-01-24-13:44:59.103 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-13:44:59.783 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-13:45:01.286 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-13:45:06.380 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-13:45:06.381 [main] INFO  Utils.DateUtil:51>>0124134506
+2019-01-24-13:45:07.541 [main] INFO  Utils.ScreenShot:37>>截图：F:\WorkSpace\AppiumTestByStep/TestReport/0124134506/case1.png
+2019-01-24-13:45:08.624 [main] INFO  Utils.ScreenShot:37>>截图：F:\WorkSpace\AppiumTestByStep/TestReport/0124134506/case1.png
+2019-01-24-13:45:08.624 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-13:45:09.195 [main] INFO  Utils.DateUtil:51>>2019年01月24日 13:45:09
+2019-01-24-13:45:09.982 [main] INFO  Utils.DateUtil:51>>2019年01月24日 13:45:09
+2019-01-24-13:50:03.923 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-13:50:04.471 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-13:50:05.972 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-13:50:11.049 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-13:50:11.050 [main] INFO  Utils.DateUtil:51>>0124135011
+2019-01-24-13:50:12.334 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-13:50:13.422 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-13:50:13.422 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-13:50:13.986 [main] INFO  Utils.DateUtil:51>>2019年01月24日 13:50:13
+2019-01-24-13:50:14.808 [main] INFO  Utils.DateUtil:51>>2019年01月24日 13:50:14
+2019-01-24-14:12:01.980 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-14:12:02.555 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-14:12:04.055 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-14:12:09.130 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-14:12:09.132 [main] INFO  Utils.DateUtil:51>>0124141209
+2019-01-24-14:12:10.304 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:12:11.372 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:12:11.372 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-14:12:11.935 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:12:11
+2019-01-24-14:12:12.782 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:12:12
+2019-01-24-14:19:37.722 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-14:19:38.284 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-14:19:39.785 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-14:19:44.845 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-14:19:44.847 [main] INFO  Utils.DateUtil:51>>0124141944
+2019-01-24-14:19:46.083 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:19:47.141 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:19:47.142 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-14:19:47.707 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:19:47
+2019-01-24-14:19:48.558 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:19:48
+2019-01-24-14:23:46.797 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-14:23:47.367 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-14:23:48.869 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-14:23:53.992 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-14:23:53.993 [main] INFO  Utils.DateUtil:51>>0124142353
+2019-01-24-14:23:55.240 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:23:56.339 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:23:56.339 [main] INFO  ElementUtil.GetByLocator:24>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-14:23:56.902 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:23:56
+2019-01-24-14:23:57.734 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:23:57
+2019-01-24-14:52:05.039 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-14:52:05.042 [main] INFO  Utils.DateUtil:51>>0124145205
+2019-01-24-14:52:06.962 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:52:08.965 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:52:08.968 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:52:08
+2019-01-24-14:52:09.890 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:52:09
+2019-01-24-14:55:50.737 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-14:57:52.562 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-14:58:34.192 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-14:58:34.953 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-14:58:36.454 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-14:58:41.505 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-14:58:41.506 [main] INFO  Utils.DateUtil:51>>0124145841
+2019-01-24-14:58:42.754 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:58:43.852 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-14:58:43.852 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-14:58:44.403 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:58:44
+2019-01-24-14:58:45.145 [main] INFO  Utils.DateUtil:51>>2019年01月24日 14:58:45
+2019-01-24-15:01:14.070 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-15:01:14.641 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-15:01:16.141 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-15:01:21.210 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-15:01:21.211 [main] INFO  Utils.DateUtil:51>>0124150121
+2019-01-24-15:01:22.454 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:01:23.707 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:01:23.708 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-15:01:24.303 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:01:24
+2019-01-24-15:01:25.188 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:01:25
+2019-01-24-15:13:09.235 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-15:13:09.844 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-15:13:11.360 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-15:13:16.452 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-15:13:16.452 [main] INFO  Utils.DateUtil:51>>0124151316
+2019-01-24-15:13:17.718 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:13:18.998 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:13:18.998 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-15:13:19.577 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:13:19
+2019-01-24-15:13:20.436 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:13:20
+2019-01-24-15:14:49.995 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-15:14:50.567 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-15:14:52.068 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-15:14:57.154 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-15:14:57.155 [main] INFO  Utils.DateUtil:51>>0124151457
+2019-01-24-15:14:58.291 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:14:59.391 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:14:59.391 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-15:14:59.460 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:14:59
+2019-01-24-15:15:00.418 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:15:00
+2019-01-24-15:17:08.611 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-15:17:09.183 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-15:17:10.684 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-15:17:15.770 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-15:17:15.772 [main] INFO  Utils.DateUtil:51>>0124151715
+2019-01-24-15:17:17.067 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:17:18.168 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:17:18.169 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-15:18:49.105 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:18:49
+2019-01-24-15:19:20.896 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-15:19:21.484 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-15:19:22.984 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-15:19:28.084 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-15:19:28.085 [main] INFO  Utils.DateUtil:51>>0124151928
+2019-01-24-15:19:29.358 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:19:30.511 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:19:30.512 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-15:21:32.711 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:21:32
+2019-01-24-15:22:13.283 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/e0y
+2019-01-24-15:22:13.871 [main] INFO  ActionUtils.ClickUtil:16>>id>com.tencent.mm:id/e0y : 点击完成
+2019-01-24-15:22:15.372 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/ka
+2019-01-24-15:22:20.459 [main] INFO  PageHandler.CheckActionHandler:32>>『正常测试』开始执行: <手机号登录>
+2019-01-24-15:22:20.460 [main] INFO  Utils.DateUtil:51>>0124152220
+2019-01-24-15:22:21.738 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:22:22.967 [main] INFO  Utils.ScreenShot:37>>截图：case1.png
+2019-01-24-15:22:22.967 [main] INFO  ElementUtil.GetByLocator:27>>获取的定位类型：id	 获取的定位表达式: com.tencent.mm:id/oe
+2019-01-24-15:22:23.033 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:22:23
+2019-01-24-15:22:23.951 [main] INFO  Utils.DateUtil:51>>2019年01月24日 15:22:23

@@ -1,6 +1,5 @@
 package ActionUtils;
 
-import ElementUtil.WaitElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.slf4j.Logger;

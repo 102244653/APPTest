@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <unit id="WeChatLogin" desc="微信登录流程的测试场景点">
 
-    <case id="case1" name="验证在Android系统中，首次启动微信APP，点击登录按钮后，可以正常进入登录界面">
+    <case id="case1"
+        name="验证在Android系统中，首次启动微信APP，点击登录按钮后，可以正常进入登录界面">
         <step action="waitForced" value="3000" desc="强制等待3秒"/>
-        <step action="loginwechat" value="13534173939:xi46513" desc="登录微信"/>
-        <step action="caseCheck" element="id>com.tencent.mm:id/oe" caseid="case1" value="13534173939" expect="equals[手机号登录]" desc="手机号登录" message="登录账号：6415353"/>
+        <step action="loginwechat" value="13534173939:98465135" desc="登录微信"/>
+        <step action="caseCheck" element="id>com.tencent.mm:id/oe" caseid="case1" value="13534173939" expect="equals[手机号1登录]" desc="手机号登录" message="登录账号：6415353"/>
     </case>
 
 </unit>

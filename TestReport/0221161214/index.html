@@ -6979,10 +6979,10 @@
             width: 300px;
         }
         #detailBody > tr > td:nth-child(5){
-            width: 400px;
+            width: 600px;
         }
         #detailBody > tr > td:nth-child(6){
-            width: 300px;
+            width: 200px;
         }
         #detailBody > tr > td:nth-child(7){
             width: 200px;
@@ -7157,17 +7157,49 @@
  var resultData = {"testName":"脉果儿APP-Android",
 "testadress":"测试",
 "testAll":1,
-"testPass":1,
-"testSkip":0,
+"testPass":0,
+"testSkip":1,
 "testFail":0,
-"totalTime":"2019年01月24日 14:23:57",
+"totalTime":"2019年02月21日 16:12:27",
 "testResult":[{"apiname":"case1",
 "casename":"手机号登录",
 "requesttype":"13534173939",
-"requestbody":"equals[手机号登录]",
+"requestbody":"id>com.tencent.mm:id/oe:equals[手机号1登录]",
 "excepct":"case1.png",
-"result":"成功",
-"log":[`测试通过`]
+"result":"跳过",
+"log":[`java.lang.NullPointerException
+	at ActionUtils.TextUtil.getText(TextUtil.java:20)
+	at PageHandler.CheckActionHandler.caseCheck(CheckActionHandler.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at Server.RunUnitService.runCase(RunUnitService.java:76)
+	at TestCase.WeChatLogin.case1(WeChatLogin.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+`]
 }]
 };
 
