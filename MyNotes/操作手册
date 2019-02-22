@@ -8,7 +8,11 @@ value	    Action行为对应所需要传递的参数值	                        
 values	    Action行为对应所需要传递的参数值组	                                                String[]	                 values="gjh,hjk,hkj"
 desc	    Action行为对应的操作备注	                                                        String	                     desc="as4d63513"
 details	    Action行为的细节描述，例如在要做滑动操作时range代表滑动时间，num代表滑动次数	    Map<String,String>	         details="range:500;num:1;"
+<<<<<<< HEAD
 expect	    检测结果的预期值	                                                                String	                     except="equals[3515]"
+=======
+expect	    检测结果的预期值	                                                                String	                     except="3515"
+>>>>>>> 136be1479cfd2fa9b1bdbc2510e2530839be7bbc
 caseid	    失败用例的截图名称	                                                                String	                     caseid="8435"
 key	        模拟键盘按键操作的键值，单个按键	                                                String	                     key="W"
 url	        调用后台接口的URL地址	                                                            String	                     url="4651df1s2f"
